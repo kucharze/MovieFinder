@@ -5,15 +5,15 @@ function MovieDisplay(props) {
     const loading = () =>{
         return (
             <>
-                <h1>{props.movie.Title}</h1>
+                <h1>Title: {props.movie.Title}</h1>
                 <h1>{props.movie.Year}</h1>
-                <h1>{props.movie.Rating}</h1>
+                <h1>Rating: {props.movie.Ratings[0].Value}</h1>
                 <hr />
                 <img src={props.movie.Poster} />
                 <h3>Starring: {props.movie.Actors}</h3>
                 <hr />
                 <h1>{props.movie.Plot}</h1>
-                <h2>{props.movie.Awards}</h2>
+                <h2>Awards: {props.movie.Awards}</h2>
             </>
         )
     }
