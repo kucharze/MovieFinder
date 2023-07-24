@@ -31,7 +31,6 @@ function App() {
 
   return (
     <div className="App">
-      test
       <Form moviesearch={getMovie} />
       <MovieDisplay movie={movie} />
     </div>
